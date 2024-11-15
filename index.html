@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Barbearia</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <hr>
+        <h1>Agendamento de Barbearia</h1>
+        <hr>
+        <p><span><b>Seg. á Sáb.</b></span> 9:00h até 21:00h</p>
+        <p><span><b>Dom.</b></span> 12:00 até 20:00h</p>
+        <form id="appointmentForm">
+            <label for="name">Nome:</label>
+            <input type="text" placeholder="digite seu nome" id="name" name="name" required>
+
+            <label for="date">Data:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Horário:</label>
+            <select id="time" name="time" required>
+                <!-- Os horários disponíveis serão preenchidos via JavaScript -->
+            </select>
+
+            <button type="submit">Agendar</button>
+
+        </form>
+        <div id="appointmentsList"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
